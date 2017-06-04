@@ -1,26 +1,16 @@
 ```py
 
-from datetime import datetime as dt
-from functools import wraps
+def operation_checker(x):
+    print('Operating...')
+    return x
 
+# List
+cont = [operation_checker(i) for i in range(10) if i % 2]
+for _ in cont:
+    print(_)
 
-def time_profiler(func):
-
-    @wraps(func)
-    def profiler(*args, **kwargs):
-
-        start_tm = dt.now()
-        print("JobStart :", start_tm)
-
-        res = func(*args, **kwargs)
-
-        end_tm = dt.now()
-        print("JobEnd   :", end_tm)
-
-        elapsed_tm = end_tm - start_tm
-        print("Elapsed  :", elapsed_tm)
-
-        return res
-
-    return profiler
+# Generator
+cont = (operation_checker(i) for i in range(10) if i % 2)    
+for _ in cont:
+    print(_)
 ```
