@@ -546,7 +546,7 @@ mydf.iloc[:2,1]
 mydf.loc[:2, 'a'] 
 
 mydf[‘a’] # pd.Series
-mydf[['a’]] # pd.DataFrame
+mydf[['a']] # pd.DataFrame
 mydf[mydf['a'] < 2]['b'] 
 
 
