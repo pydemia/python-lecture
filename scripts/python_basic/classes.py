@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 #%% 클래스 정의하기
 
 obj = "python"
