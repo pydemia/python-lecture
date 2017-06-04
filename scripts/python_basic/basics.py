@@ -534,7 +534,7 @@ mydf = pd.DataFrame(myarray)
 mydf
 
 mydf.columns
-mydf.columns = ['a', 'b', 'c’]
+mydf.columns = ['a', 'b', 'c']
 mydf
 
 mydf = pd.DataFrame({'a':[1,2,3],
