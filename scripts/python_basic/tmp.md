@@ -32,4 +32,7 @@ class myobject(object):
     
     #def __delitem__(self):
     #    pass
+    
+    def __len__(self):
+        return len(self.data)
 ```
