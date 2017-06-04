@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 #%% Python 중급 맛보기
 
 # Decorators
