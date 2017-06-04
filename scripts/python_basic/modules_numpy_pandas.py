@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 #%% 모듈, 패키지
 
 from src.mod import mymodule as md
