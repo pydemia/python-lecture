@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 #%%  함수 정의하기
 
 def func_name(var1, var2):
