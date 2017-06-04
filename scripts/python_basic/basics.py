@@ -250,7 +250,7 @@ twice(10)
 
 
 # Lambda 함수
-adder = lambda x: num1 + num2
+adder = lambda x, y: x + y
 adder(2, 3)
 
 twice = lambda x: x * 2
@@ -332,8 +332,7 @@ class elapsed_watch1(stopwatch):
 
     def elapse(self):
         self.end_time = dt.datetime.now()
-        elapsed = self.end_time - \  
-                  self.start_time
+        elapsed = self.end_time - self.start_time
         print("Elapsed: ", str(elapsed))
         return elapsed
 
@@ -342,8 +341,7 @@ class elapsed_watch2(stopwatch):
 
     def stop(self):
         self.end_time = dt.datetime.now()
-        elapsed = self.end_time - \  
-                  self.start_time
+        elapsed = self.end_time - self.start_time
         print("Start  : ", self.start_time)
         print("End    : ", self.end_time)
         print("Elapsed: ", str(elapsed))
@@ -361,16 +359,14 @@ class elapsed_watch3(stopwatch):
 
     def elapse(self):
         self.end_time = dt.datetime.now()
-        elapsed = self.end_time - \  
-                  self.start_time
+        elapsed = self.end_time - self.start_time
         print("Elapsed: ", str(elapsed))
         return elapsed
 
 
     def stop(self):
         self.end_time = dt.datetime.now()
-        elapsed = self.end_time - \  
-                  self.start_time
+        elapsed = self.end_time - self.start_time
         print("Start  : ", self.start_time)
         print("End    : ", self.end_time)
         print("Elapsed: ", str(elapsed))
@@ -388,7 +384,7 @@ watch1.elapse()
 watch2 = elapsed_watch2()
 watch2.stop()
 
-watch3 = elapsed_watch3(("Python")
+watch3 = elapsed_watch3("Python")
 watch3.elapse()
 watch3.stop()
 
@@ -403,7 +399,7 @@ tmp = md.stopwatch()
 tmp = sw()
 
 
-from src.op import int_operators, float_operators as iop, fop 
+from src.op import int_operators, float_operators
 
 
 
