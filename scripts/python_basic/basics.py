@@ -424,16 +424,35 @@ class myobject(object):
     #def __delitem__(self):
     #    pass
     
+    def __len__(self):
+        return len(self.data)
+    
 
-aa = myobject([1,2,3], 'This is my own Object.')
-ab = myobject((1,2,3), 'This is my own Object.')
+#새 인스턴스 생성 : init, new
+tmpls = [1,2,3]
+myobj = myobject(tmpls, ‘Test’)
 
-aa.data
+# 속성값 확인
+Myobj.data
+Myobj.name
 
-type(aa)
-aa
-aa[1]
-aa[2] = 4
+# Type(Class) 확인
+type(myobj)
+
+
+# 값 출력(print & str) : str
+print(myobj)
+str(myobj)
+
+# Indexing : getitem
+myobj[1]
+
+# Replacing : setitem
+myobj[2] = 4
+
+# Container 크기 확인 : len
+len(myobj)
+
 
 
 #%% 모듈, 패키지
