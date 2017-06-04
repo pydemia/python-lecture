@@ -468,6 +468,53 @@ tmp = sw()
 from src.op import int_operators, float_operators
 
 
+#%% Numpy
+
+# Start
+import numpy
+import numpy as np
+
+myarray = np.array([[1,2,3], [4,5,6], [7,8,9]])
+myarray
+
+np.identity(3) # 단위행렬
+np.eye(2) # 단위행렬
+np.zeros((3,2)) # 영행렬
+np.empty((2,3)) # 영행렬
+np.ones((2,2)) # 값이 1인 행렬
+np.random.rand(2,3) # Random 행렬 
+
+np.matrix(myarray) # Matrix
+
+# Calculation
+print(myarray.shape)
+print(myarray.dtype)
+
+myarray * 10
+myarray + 10
+
+xarray = np.array([[1,2,3], [4,5,6], [7,8,9]])
+yarray = np.array([1,0,1])
+
+xarray * yarray
+xarray.dot(yarray)
+np.dot(xarray, yarray)
+
+
+# Subsetting
+myarray[0][2]
+myarray[0,2]
+
+myarray[:2]
+myarray[:2,:]
+myarray[:,:2]
+
+
+#%% Pandas
+
+
+
+
 
 #%% Python 중급 맛보기
 
@@ -490,7 +537,7 @@ def double(func):
     return function 
 
 # Usage 1
-@plusone 
+@plusone
 def adder(a, b):
     return a+b
 
@@ -498,7 +545,7 @@ adder(1, 2)
 
 # Usage 2
 @double
-@plusone 
+@plusone
 def adder(a, b):
     return a+b
 
