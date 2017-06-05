@@ -136,7 +136,7 @@ mylist = [1, 2, 3, 4, 5, 6, 7]
 
 #%% Generators
 
-# List Comprehension
+# Generator Expressions
 (expression for items in iterables)
 (expression for items in iterables if condition)
 
