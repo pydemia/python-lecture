@@ -157,8 +157,8 @@ tmpls = [1,2,3]
 myobj = myobject(tmpls, 'Test')
 
 # 속성값 확인
-Myobj.data
-Myobj.name
+myobj.data
+myobj.name
 
 # Type(Class) 확인
 type(myobj)
