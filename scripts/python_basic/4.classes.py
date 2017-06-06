@@ -154,7 +154,7 @@ class myobject(object):
 
 #새 인스턴스 생성 : init, new
 tmpls = [1,2,3]
-myobj = myobject(tmpls, ‘Test’)
+myobj = myobject(tmpls, 'Test')
 
 # 속성값 확인
 Myobj.data
