@@ -151,7 +151,10 @@ class myobject(object):
     def __len__(self):
         return len(self.data)
     
+    def __repr__(self):
+        return str(self.data)
 
+    
 #새 인스턴스 생성 : init, new
 tmpls = [1,2,3]
 myobj = myobject(tmpls, 'Test')
@@ -167,6 +170,7 @@ type(myobj)
 # 값 출력(print & str) : str
 print(myobj)
 str(myobj)
+myobj
 
 # Indexing : getitem
 myobj[1]
