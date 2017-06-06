@@ -155,7 +155,7 @@ class myobject(object):
         return str(self.data)
 
     
-#새 인스턴스 생성 : init, new
+#새 인스턴스 생성 : __init__, __new__
 tmpls = [1,2,3]
 myobj = myobject(tmpls, 'Test')
 
@@ -167,16 +167,16 @@ myobj.name
 type(myobj)
 
 
-# 값 출력(print & str) : str
+# 값 출력(print & str) : __str__, __repr__
 print(myobj)
 str(myobj)
 myobj
 
-# Indexing : getitem
+# Indexing : __getitem__
 myobj[1]
 
-# Replacing : setitem
+# Replacing : __setitem__
 myobj[2] = 4
 
-# Container 크기 확인 : len
+# Container 크기 확인 : __len__
 len(myobj)
